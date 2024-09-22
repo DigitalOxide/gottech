@@ -103,46 +103,6 @@ html, body, h1, h2, h3, h4, h5 {
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
   <p>Copyright © 2010-2024 GotTech.biz</p>
 </footer>
-<script>
-// Slideshow script
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
-}
-// Modal scripts
-var modal1 = document.getElementById('TS');
-var modal2 = document.getElementById('PB');
-var modal3 = document.getElementById('WS');
-window.onclick = function(event) {
-  if (event.target == modal1 || event.target == modal2 || event.target == modal3) {
-    modal1.style.display = "none";
-	modal2.style.display = "none";
-	modal3.style.display = "none";
-  }
-}
-</script>
 
 </body>
 
